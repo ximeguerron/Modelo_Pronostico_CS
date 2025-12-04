@@ -1,2 +1,8 @@
-theme: jekyll-theme-leap-day
+remote_theme: pages-themes/leap-day@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
+gem "github-pages", group: :jekyll_plugins
+
 title: Modelos de Pronóstico para la Monitorización de la Calidad de Servicios Cloud
+descrption: Un Enfoque basado en el Aprendizaje Automático para Pronóstico de Servicios Cloud
