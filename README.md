@@ -1,6 +1,6 @@
-# A product quality model for cloud services
+# Modelos de Pronóstico para la Monitorización de la Calidad de Servicios Cloud
 
-# Welcome {#inicio}
+# Inicio {#inicio}
 You can find relevant information on this site attached to the article the **_A product quality model for cloud services_**. 
 The **_product quality model_** and the **_case study_** are detailed in the following sections.
 
