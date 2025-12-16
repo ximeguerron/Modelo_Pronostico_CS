@@ -1,22 +1,34 @@
 * * *
-  * # Modelos de Pronóstico para la Monitorización de la Calidad de Servicios Cloud
+  # Modelos de Pronóstico para la Monitorización de la Calidad de Servicios Cloud
 * * *
 
 ## Indice {#Home}
 **1. Taxonomía de métricas para servicios cloud** (#tax)
+
 PLANNING
+
 1.1. [Search Protocol](#Protocolo)
+
 1.2. [Search Strings](#busqueda)
+
 CONDUCTING
+
 1.3. [Primary Studies](#estudios)
+
 1.4. [Quality Assessment](#qa)
+
 REPORTING
+
 1.5. [Taxonomy of QoS metrics for cloud services](#clasificacion)
 
 **2. Modelo de Calidad para servicios cloud** (#qmodel)
+
 2.1. [Quality model metamodel](#metamodel)
+
 2.2. [Method](#method)
+
 2.3. [Building the quality model](#building)
+
 2.4. [Quality model for cloud services](#model)
 
 **3. Aplicación del Modelo en un Entorno Industrial**(#qcaso)
@@ -24,13 +36,21 @@ REPORTING
 **4. Procesos de Modelado para el Pronóstico de QoS**
 
 **5. Modelos de Pronóstico de QoS para servicios cloud**
+
 5.1. [Dataset](#datos)
+
 5.2. [Jupiter Notebooks](#notebook)
+
 5.3. [BI-GRU Accuracy Metrics](#MetricBiGru)
+
 5.4. [LSTM Accuracy Metrics](#MetricLSTM)
+
 5.5. [BI-GRU model predictions](#BiGru)
+
 5.6. [LSTM model predictions](#LSTM)
+
 5.7. [ARIMA model predictions](#ARIMA)
+
 5.8. [AUTO ARIMA model predictions](#AUTOARIMA) 
 
 * * *
@@ -92,6 +112,8 @@ IEEE Xplore |((("Publication Title":attribute OR "Publication Title":characteris
 ACM Digital Library|(Title:((attribute OR characteristic) OR (metric* OR measur*)) OR Abstract:((attribute OR characteristic) OR (metric* OR measur*))  OR Keyword:((attribute OR characteristic) OR (metric* OR measur*))) AND (Title:(QoS "quality of service" "quality model" "evaluation model" "assessment model" "quality in cloud" "quality of cloud") OR Abstract:(QoS "quality of service" "quality model" "evaluation model" "assessment model" "quality in cloud" "quality of cloud") OR Keyword:(QoS "quality of service" "quality model" "evaluation model" "assessment model" "quality in cloud" "quality of cloud")) AND (Title:(cloud) OR Abstract:(cloud) OR Keyword:(cloud))|Title, abstract and keywords |Published since: 2006
 ScienceDirect|TITLE-ABSTR-KEY(cloud ((attribute OR characteristic) OR (metric OR measur)) AND (QoS OR "quality of service" OR "quality model" OR "evaluation model" OR "assessment model" OR "quality in cloud" OR "quality of cloud")) |Title, abstract and keywords|Pub-date > 2005. Content type: Journal.
 SpringerLink| cloud* AND (attribute* OR characteristic* OR measur* OR metric*) AND (QoS OR "quality of service" OR "quality model" OR "evaluation model" OR "assessment model" OR "quality in cloud" OR "quality of cloud")|Full text 	|Content Type: Article. Discipline: Computer Science Language: English.
+
+[Indice](#Home)
 
 ### Conducting
 ### 1.3. Primary Studies {#estudios}
@@ -204,6 +226,7 @@ Q8. (Contributions/results) Are the contributions/results of the paper discussed
 Q9. (Insights) Are the insights/lessons learned of the study reported? |
 Q10. (Limitations) Are the limitations of the study discussed? |
 
+[Indice](#Home)
 
 **QUALITY ASSESSMENT**
 
@@ -302,6 +325,7 @@ S87 | P | N | P | Y | P | N | N | P | N | N | 3
 S88 | P | P | Y | Y | Y | N | N | P | N | N | 4,5
 
 Y: Fully compliance, P: Partially comply, N: Do not comply
+[Indice](#Home)
 
 **RELEVANCE OF PRIMARY STUDIES**
 
@@ -420,6 +444,7 @@ NOTE: In order to visualize the reports, please enable de _Power Pivot_ and _Pow
 
 <a href ="https://support.office.com/en-us/article/Start-the-Power-Pivot-add-in-for-Excel-a891a66d-36e3-43fc-81e8-fc4798f39ea8"> How to enable Excel complements
 
+[Indice](#Home)
 
 ## 2. Modelo de Calidad para servicios cloud {#qmodel}
 Puede encontrar información relevante del capítulo **_Modelo de Calidad para Servicios Cloud_**.
@@ -446,6 +471,8 @@ measured using metrics.
 ratio, or absolute) combined with a measurement approach (i.e., measurement method or measurement function)
 - Operationalization is the core of the metamodel, which establishes a mapping between the generic definition of a metric and the artifact or cloud platform where the metric is measured. 
 
+[Indice](#Home)
+
 ### 2.2. Method {#method}
 
 Our proposal is a quality model for cloud services that meets the conditions for a mixed approach and has been defined based on these two resources. 
@@ -461,6 +488,7 @@ As a result, 243 attributes, 407 metrics, and 468 operationalizations were obtai
 
 Figure 2. <a href ="./images/Figure2.pdf">Attributes, metric, operationalizations </a> <br> 
 
+[Indice](#Home)
 
 ### 2.3. Building quality model {#building}
 The hierarchical decomposition of the quality model was performed using thematic analysis. This method provides a rigorous and systematic way to process qualitative information by identifying, analyzing, and eliciting patterns (themes) within the data collected [42].
@@ -490,6 +518,8 @@ Figure 4.<a href ="./images/Figure4.pdf">Cloud service quality characteristics a
 
 <br> 
 
+[Indice](#Home)
+
 ### 2.5 Instrucciones para el modelo de calidad de PowerBI** <br> 
 
  - Download **PowerBI file** on Local
@@ -513,6 +543,7 @@ Link to **Excel** file <a href ="https://support.office.com/en-us/article/Start-
 
 NOTE: In order to visualize the reports, please enable de _Power Pivot_ and _Power View_ complements of Excel. -->
 
+[Indice](#Home)
 
 # 3. Aplicación del Modelo de Calidad en un Entorno industrial {#qmcaso}
 Se presenta un estudio de caso orientado a validar empíricamente el modelo de calidad genérico propuesto. 
@@ -555,6 +586,7 @@ among all the containers.
   
 <!--The tool monitor setting and   <p> 1. <a href ="https://onenr.io/02wdKxE1XQE"> IaaS monitor </a> <br>-->
   
+[Indice](#Home)
 
 ## 4. Procesos de Modelado para el Pronóstico de QoS
 
@@ -777,7 +809,7 @@ BI-GRU Model fitting with prequential cross-validation
 | Disk Used percent   | ![Disk Used percent_test.png](imgs/BiGru/results/iteration_0_Disk%20Used%20percent_test_result.png) | 	![Disk Used percent_test.png](imgs/BiGru/results/iteration_1_Disk%20Used%20percent_test_result.png) | 	![Disk Used percent_test.png](imgs/BiGru/results/iteration_2_Disk%20Used%20percent_test_result.png) | 
 | Uptime              | ![Uptime_test.png](imgs/BiGru/results/iteration_0_Uptime_test_result.png) | 	![Uptime_test.png](imgs/BiGru/results/iteration_1_Uptime_test_result.png) | 	![Uptime_test.png](imgs/BiGru/results/iteration_2_Uptime_test_result.png) | 
 
-[Index](#Home)
+[Indice](#Home)
 
 ### 5.6. Modelo de pronóstico LSTM {#LSTM}
 LSTM Model fitting with prequential cross-validation
@@ -801,7 +833,7 @@ LSTM Model fitting with prequential cross-validation
 | Disk Used percent   | ![Disk Used percent_test.png](imgs/LSTM/results/iteration_0_Disk%20Used%20percent_test_result.png) | 	![Disk Used percent_test.png](imgs/LSTM/results/iteration_1_Disk%20Used%20percent_test_result.png) | 	![Disk Used percent_test.png](imgs/LSTM/results/iteration_2_Disk%20Used%20percent_test_result.png) | 
 | Uptime              | ![Uptime_test.png](imgs/LSTM/results/iteration_0_Uptime_test_result.png) | 	![Uptime_test.png](imgs/LSTM/results/iteration_1_Uptime_test_result.png) | 	![Uptime_test.png](imgs/LSTM/results/iteration_2_Uptime_test_result.png) | 
 
-[Index](#Home)
+[Indice](#Home)
 
 ### 5.7. Modelo de pronóstico ARIMA {#ARIMA}
 ARIMA Model fitting with prequential cross-validation
@@ -825,7 +857,7 @@ ARIMA Model fitting with prequential cross-validation
 | Disk Used percent   | ![DiskUsedpercent_test.png](imgs/Arima/Iteration-0_DiskUsedpercent_test_result.png) | 	![DiskUsedpercent_test.png](imgs/Arima/Iteration-1_DiskUsedpercent_test_result.png) | 	![DiskUsedpercent_test.png](imgs/Arima/Iteration-2_DiskUsedpercent_test_result.png) | 
 | Uptime              |![Uptime_rmse.png](imgs/Arima/Iteration-0_Uptime_test_result.png) | 	![Uptime_mae.png](imgs/Arima/Iteration-1_Uptime_test_result.png) | 	![Uptime_mape.png](imgs/Arima/Iteration-2_Uptime_test_result.png) | 
 
-[Index](#Home)
+[Indice](#Home)
 
 
 
@@ -840,6 +872,7 @@ ARIMA Model auto fitting with prequential cross-validation
 | Used Disk           | ![UsedDisk_test.png](imgs/AutoArima/Iteration-0_UsedDisk_test_result.jpg) | 	![UsedDisk_test.png](imgs/AutoArima/Iteration-1_UsedDisk_test_result.jpg) | 	![UsedDisk_test.png](imgs/AutoArima/Iteration-2_UsedDisk_test_result.jpg) | 
 | Disk read/s         | ![Diskreads_test.png](imgs/AutoArima/Iteration-0_Diskreads_test_result.jpg) | 	![Diskreads_test.png](imgs/AutoArima/Iteration-1_Diskreads_test_result.jpg) | 	![Diskreads_test.png](imgs/AutoArima/Iteration-2_Diskreads_test_result.jpg) | 
 
+[Indice](#Home)
 
 ## Contacto o soporte
 
