@@ -1,11 +1,11 @@
-Instrucciones para la ejecución del cuaderno
+Instructions for notebook execution 
 
-Abre el archivo .ipynb en Google Colab o utilizando Anaconda/Jupiter Lab.
+Open the .ipynb file on Google Colab or using Anaconda/ Jupiter Lab
 
-Crea directorios en Google Drive para generar los gráficos y el archivo de resultados.
+Create directories on Google Drive to generate the graphs and file of results
 \ESTUDIO_TIME_SERIES
 
-Directorios internos
+Inner directories
 .\Arima
 .\AutoArima
 .\BiGru
@@ -15,6 +15,6 @@ Directorios internos
 .\LSTM
 .\SUPERVISED_DATASETS
 
-Para los directorios Arima, AutoArima, BiGru y LSTM, cree los directorios internos.
+For directories Arima, AutoArima, BiGru, LSTM create the inner directories
 .\metrics_result
 .\test_result
